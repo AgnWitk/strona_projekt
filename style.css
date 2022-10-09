@@ -1,0 +1,130 @@
+html, body {
+	background-color: #6699ff;
+	color: #000;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+nav {	
+	width:20%; 
+	float:right; 
+	padding:1%; 
+	overflow:hidden; 
+}
+nav ul li {
+	list-style-type:none; 
+	padding:0 0 0 10px;
+	background: #99ccff;
+}
+footer { 
+	height:50px;
+	background:#000033;
+	color:#ffff00;
+	text-align:center;
+	margin-top:10px;
+	padding:5px;
+}
+header { 
+	height:100px;	
+	background: #000033; 
+	color: #ffcc00;
+	margin: 0 0 10px 0; 
+}
+nav ul > li:hover  {
+   background-color: #6699ff;
+}
+nav ul > li:hover > a	{
+	color: #002080;
+}
+nav ul li a.active{
+   background-color: #6699ff;
+	color: #002080;
+}
+h2 {color:#000066}
+h4::first-letter{
+	color:#ffcc00;
+}
+.obrazek_poziomy {
+	width: 150px;
+	height: 120px;
+	transition-property: with, height;
+	transition-duration: 0,5s;
+	transition-timing-function: linear;
+	transition-delay: 0,5s;
+}
+.obrazek_poziomy:hover{
+	width: 450px;
+	height: 360px;
+}
+.obrazek_pionowy {
+	width: 100px;
+	height: 120px;
+	transition-property: with, height;
+	transition-duration: 0,5s;
+	transition-timing-function: linear;
+	transition-delay: 0,5s;
+}
+.obrazek_pionowy:hover {
+	width: 360px;
+	height: 450px;
+}
+
+
+
+#content { 
+	width:75%; 
+	background: #99ccff; 
+	float:left; 
+	padding:1%; 
+	overflow:hidden; 
+}
+#wrapper { 
+	width:90%;
+	overflow:hidden;
+	margin:0 auto;
+	min-height:calc(100% - 52px); 
+	padding:1%; 
+}
+table{
+	border: 1px solid black;
+}
+table th{
+	text-align: center;
+	border: 1px solid black;	
+}
+table td{
+	text-align: left;
+	border: 1px solid black;	
+}
+.right {text-align:right}
+
+svg {
+  border: 3px solid #000033;
+  display: block;
+  margin: 1em auto;
+  }
+ svg:hover {
+  transform: skew(40deg,10deg);
+  }
+
+  svg {
+  background-color: red;
+  animation-name: animacjacss3;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animacjacss3 {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+@media only screen and (max-width: 900px) {
+   nav {width:88%; position:absolute; height:30px;}
+   nav ul li {display: inline; }
+	nav ul li:after {content: " |";}
+   #content {width: 98%;position:relative; top: 30px;margin-top:5%;}
+   table {display: none;}
+}

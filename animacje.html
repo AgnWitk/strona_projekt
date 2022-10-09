@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+      <title>16 Gdanska Druzyna Harcerek "Burza"</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="Stylesheet" type="text/css" href="style.css">
+	</head>
+   <body>
+		<div id="wrapper">
+			<header>
+				<h1>Animacje</h1>
+          </header>
+
+         <div id="content"> 
+				<svg  width="500" height="100">
+					<circle id="orange-circle" r="30" cx="50" cy="50" fill=#ffcc00 />
+					<animate 
+					 xlink:href="#orange-circle"
+					 attributeName="cx"
+					 from="50"
+					 to="450" 
+					 dur="3s"
+					 begin="0s"
+					 repeatCount="indefinite"
+					 fill="freeze"/>
+				</svg>
+				<p class="right"><a href='#wrapper'>go to the top of page</a></p>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="podstawowe_informacje.html">Podstawowe informacje</a></li>
+					<li><a href="galeria.html">Galeria</a></li>
+					<li><a class="active" href="animacje.html">Animacje</a></li>
+					<li><a href="wiecej_informacji.html">Wiecej informacji</a></li>	
+				</ul> 
+			</nav>
+		</div>
+		<footer class="right"> Copyright 2019, Agnieszka Witkowska, ACiR gr.2 </footer>
+
+	</body>
+</html>

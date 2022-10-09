@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+      <title>16 Gdanska Druzyna Harcerek "Burza"</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />		
+		<link rel="Stylesheet" type="text/css" href="style.css">
+	</head>
+   <body>
+		<div id="wrapper">
+			<header>
+				<h1>Wiecej informacji</h1>
+          </header>
+
+         <div id="content"> 
+			<section>
+				<h3 id="formularz">Jesli chcesz do nas dolaczyc- wypelnij formularz</h3>
+				<form>
+				Imie<br/>
+				<input type="text" name="imie" value="Prosze podac imie"><br/>
+				Nazwisko<br/>
+				<input type="text" name="nazwisko" value="Prosze podac nazwisko"><br/>
+				W jakim rejonie jest ci najblizej dzialac?<br/>
+				<input type="radio" name="rejon" id="cirrus" value="Orunia-Lostowice">
+				<label for="cirrus">Orunia-Lostowice</label><br/>
+				<input type="radio" name="rejon" id="nimbo" value="Borkowo">
+				<label for="nimbo">Borkowo</label><br/>
+				<input type="radio" name="rejon" id="asperitas" value="Wrzeszcz-Zaspa-Przymorze">
+				<label for="asperitas">Wrzeszcz-Zaspa-Przymorze</label><br/>
+				Skad dowiedzialas sie o naszej druzynie?<br/>
+				<input type="checkbox" name="powod" value="znajomi">Od znajomych<br/>
+				<input type="checkbox" name="powod" value="fb">Z facebooka<br/>
+				<input type="checkbox" name="powod" value="strona">Z naszej strony internetowej<br/>
+				<input type="checkbox" name="powod" value="inne">Inne<br/>
+				Ile masz lat?<br/>
+				<select>
+					<option value="0">Wybierz swoj wiek</option>
+					<option value="1">10-12</option>
+					<option value="2">12-14</option>
+					<option value="3">14-16</option>
+					<option value="4">inne</option>
+				</select><br/>
+				Napisz dlaczego zdecydowalas sie dolaczyc do naszej druzyny
+				<textarea rows="5" cols="70"></textarea><br/>
+				Dane kontaktowe<br/>
+				<input type="text" name="kontakt" value="Prosze podac email lub numer telefonu"><br/>
+				<input formaction="send.html" type="submit" value="Przeslij formularz">
+				<input type="reset">
+				</form>
+				<h3 id="kontakt">Kontakt</h3>
+				<b><a href="https://www.facebook.com/16gdhburza/" target=blank>Znajdz nas na facebooku</a></b><br/>
+				<b><a href="mailto:burza.zhr@gmail.com">Napisz do nas</a></b><br/>
+				<a href='#formularz'>Wypelnij formularz zgloszeniowy</a>
+				<p class="right"><a href='#wrapper'>go to the top of page</a></p>
+			</section>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="podstawowe_informacje.html">Podstawowe informacje</a></li>
+					<li><a href="galeria.html">Galeria</a></li>
+					<li><a href="animacje.html">Animacje</a></li>
+					<li><a class="active" href="wiecej_informacji.html">Wiecej informacji</a></li>	
+					<li>
+						<ul>
+							<li><a href='#formularz'>Formularz zgloszeniowy</a> </li>
+							<li><a href='#kontakt'>Kontakt</a> </li>
+						</ul>
+					</li>
+				</ul> 
+			</nav>
+		</div>
+		<footer class="right"> Copyright 2019, Agnieszka Witkowska, ACiR gr.2</footer>
+
+	</body>
+</html>
